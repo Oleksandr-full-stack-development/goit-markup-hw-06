@@ -923,10 +923,13 @@ address a {
 .modal-form-icon {
   position: absolute;
   display: block;
+  background-color: rgba(0, 0, 0, 0.15);
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
   fill: black;
+  width: 18px;
+  height: 18px;
   /* transition: background-color 250ms linear; */
 }
 
