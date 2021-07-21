@@ -822,6 +822,66 @@ address a {
   margin-left: 70px;
 }
 
+.white-uppercase-text {
+  color: var(--main-white);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.telegram-sign-up {
+  display: flex;
+  align-items: baseline;
+}
+
+.sign-up {
+  margin-left: 93px
+}
+
+.sign-up-input {
+  width: 358px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: transparent;
+  color: var(--main-white);
+}
+
+.sign-up-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.sign-up-button {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 28px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--main-white);
+  background-color: var(--active-link);
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  text-align: center;
+}
+.sign-up-icon {
+  fill: var(--main-white);
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 /* =================================================Модальное окно============================================ */
 .backdrop {
   position: fixed;
@@ -906,6 +966,18 @@ address a {
   margin-top: 6px;
 }
 
+.modal-form-input-wrapper.accept-policy {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.modal-form-checkbox {
+  top:10px;
+  left: 16px;
+}
+
 .modal-form-input {
   width: 100%;
   height: 40px;
@@ -916,14 +988,14 @@ address a {
 }
 
 .modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  outline: var(--active-link);
+  border-color: var(--active-link);
 }
 
 .modal-form-icon {
   position: absolute;
   display: block;
-  background-color: rgba(0, 0, 0, 0.15);
+  /* background-color: rgba(0, 0, 0, 0.15); */
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
@@ -949,24 +1021,28 @@ address a {
 }
 
 .modal-form-message::placeholder {
-  text-transform: uppercase;
+
   color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  outline: var(--active-link);
+  border-color: var(--active-link);
   resize: none;
-  width: ;
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-color: var(--accent-color);
-  box-shadow: inset 0 0 0 4px #ffffff;
+  /* background-color: var(--accent-color); */
+  /* box-shadow: inset 0 0 0 4px #ffffff;  */
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/icon_check.svg);
+
 }
 
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  outline: 2px solid rgba(0, 0, 255, 0.5);
+  outline: 1px solid var(--active-link);
+
 }
 
 .modal-form-checkbox-label {
@@ -974,7 +1050,7 @@ address a {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -987,17 +1063,33 @@ letter-spacing: 0.03em;
 .modal-form-checkbox-label::before {
   display: block;
   content: "";
-  width: 18px;
-  height: 18px;
-  border: 1px solid #303030;
+  width: 16px;
+  height: 15px;
+  /* border: 1px solid #303030; */
   cursor: pointer;
   margin-right: 10px;
+  background-image: url(../images/Vector-checkbox.svg);
 }
 
 .modal-form-btn {
   margin: 0 auto;
   width: 200px;
   height: 50px;
+  background: var(--active-link);
+  border: none;
+  display: block;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-white);
+  padding: 10px 55px;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 }
 
 /* ======================================================Доп клас====================================== */
